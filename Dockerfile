@@ -1,5 +1,5 @@
 # Step 1: Build the Next.js app in a Node.js environment
-FROM node:16 as builder
+FROM node:18.17.0 as builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Step 2: Serve the app using a Node.js server
-FROM node:16 as runner
+FROM node:18.17.0 as runner
 
 WORKDIR /app
 
