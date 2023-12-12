@@ -40,7 +40,7 @@ jobs:
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: nextjs-app-task-definition.json
+          task-definition: nextjs-task-definition.json
           container-name: nextjs-app
           image: ${{ steps.build-image.outputs.image }}
       - name: Deploy Amazon ECS task definition
