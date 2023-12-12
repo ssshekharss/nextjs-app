@@ -1,4 +1,3 @@
-
 # Step 1: Build the Next.js app in a Node.js environment
 FROM node:16 as builder
 
